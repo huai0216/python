@@ -20,5 +20,6 @@ for i in range (students) :
         topname = topname
         secondscore = secondscore
         secondname = secondname
+        
 print("Top two student:\n{}'s score is : {}\n{}'s score is: {}"\
         .format(topname,topscore,secondname,secondscore))
