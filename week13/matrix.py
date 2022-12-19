@@ -1,0 +1,13 @@
+import numpy as np
+a = np.array([[1.5,1.1,0],[-4.2,-2,2.2],[0,4,3.3]])
+b = np.array([5,4,3])
+a_t = np.transpose(a)
+bb = np.matmul(a_t,a)
+a_inverse = np.linalg.inv(a)
+print('B is \n{}'.format(bb))
+print('A+B is \n{}'.format(a+bb))
+print('A-B is \n{}'.format(a-bb))
+print('A transpose is \n{}'.format(a_t))
+print('A inverse is \n{}'.format(a_inverse))
+sol = np.matmul(a_inverse,b)
+print('Solution to Ax = b is \n{}'.format(sol))
